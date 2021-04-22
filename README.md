@@ -116,7 +116,7 @@ In `Configure` add authentication before authorization. Remember, order matters 
 ```
 
 ## Add end-points to register and authenticate PortalUsers.
-###Add an Account controller
+### Add an Account controller
 See `Controllers\AccountController`. This uses DTO models for registration and login:
 * Models\RegisterRequest
 * Models\LoginRequest
