@@ -9,14 +9,14 @@ Start by creating a project with:
 
 ## Add Packages
 Add the following packages:
-    *Microsoft.AspNetCore.Authentication.JwtBearer
-    *Microsoft.AspNetCore.Identity.EntityFrameworkCore
-    *Microsoft.EntityFrameworkCore
-    *Microsoft.EntityFrameworkCore.Design
-    *Microsoft.EntityFrameworkCore.SqlServer
-    *Microsoft.Extensions.DependencyInjection
-    *Microsoft.Extensions.Identity.Core
-    *System.IdentityModel.Tokens.Jwt
+* Microsoft.AspNetCore.Authentication.JwtBearer
+* Microsoft.AspNetCore.Identity.EntityFrameworkCore
+* Microsoft.EntityFrameworkCore
+* Microsoft.EntityFrameworkCore.Design
+* Microsoft.EntityFrameworkCore.SqlServer
+* Microsoft.Extensions.DependencyInjection
+* Microsoft.Extensions.Identity.Core
+* System.IdentityModel.Tokens.Jwt
 
 ## Set up Entity Framework
 ### Add Connection String
@@ -118,8 +118,8 @@ In `Configure` add authentication before authorization. Remember, order matters 
 ## Add end-points to register and authenticate PortalUsers.
 ###Add an Account controller
 See `Controllers\AccountController`. This uses DTO models for registration and login:
- * Models\RegisterRequest
- * Models\LoginRequest
+* Models\RegisterRequest
+* Models\LoginRequest
 
 #### Constructor Injection
 Add UserManager and SignInManager through constructor injection to hook into Identity management. This provides access to password hashing, user creation, user sign-in etc.
@@ -252,7 +252,7 @@ Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhcGkiLCJuYW1lIjoiZGF2aWRi
 
 # Acknowledgements
 Thanks to all of the following for useful information that helped pull this together:
- * https://stackoverflow.com/questions/65983243/use-net-core-identity-with-an-api
- * https://stackoverflow.com/questions/58165036/login-to-angular-spa-with-asp-net-core-3-api-without-redirect-outside-of-spa
- * https://jasonwatmore.com/post/2019/10/14/aspnet-core-3-simple-api-for-authentication-registration-and-user-management
- * https://youtu.be/h2hGGPHLqqc
+* https://stackoverflow.com/questions/65983243/use-net-core-identity-with-an-api
+* https://stackoverflow.com/questions/58165036/login-to-angular-spa-with-asp-net-core-3-api-without-redirect-outside-of-spa
+* https://jasonwatmore.com/post/2019/10/14/aspnet-core-3-simple-api-for-authentication-registration-and-user-management
+* https://youtu.be/h2hGGPHLqqc
